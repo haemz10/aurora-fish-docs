@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Fish — Support</title>
+<meta name="description" content="Support for the Aurora Fish app: frequently asked questions and contact.">
+<style>
+  :root {
+    --bg: #05060d; --panel: #0e1122; --text: #e9e7f5; --muted: #a9a6c4; --accent: #b9a6ff; --line: #262a45;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f5fb; --panel: #ffffff; --text: #1b1a2b; --muted: #5d5a78; --accent: #6a4fd8; --line: #dedbee; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, "Noto Sans KR", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+  .brand { font-weight: 600; letter-spacing: 0.02em; color: var(--accent); text-decoration: none; }
+  .lang { display: flex; gap: 6px; }
+  .lang button { font: inherit; font-size: 14px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+  .lang button[aria-pressed="true"] { color: var(--text); border-color: var(--accent); }
+  h1 { font-size: 28px; line-height: 1.25; margin: 24px 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 4px; }
+  p { margin: 0 0 12px; }
+  .muted { color: var(--muted); }
+  section.doc { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 8px 24px 24px; margin-top: 24px; }
+  .contact { display: inline-block; margin-top: 4px; padding: 10px 18px; border-radius: 12px; border: 1px solid var(--accent); color: var(--text); text-decoration: none; font-weight: 600; overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
+  .js [data-lang]:not(.shown) { display: none; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="brand">Aurora Fish</span>
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-set="en" aria-pressed="true">English</button>
+      <button type="button" data-set="ko" aria-pressed="false">한국어</button>
+    </nav>
+  </header>
+
+  <section class="doc" data-lang="en" lang="en">
+    <h1>Aurora Fish Support</h1>
+    <p class="muted">A calm aquarium companion: care for your fish, watch them grow and decorate their bowl.</p>
+
+    <h2>Contact</h2>
+    <p>For questions, problems or feedback, email us. We usually reply within a few days.</p>
+    <a class="contact" href="mailto:cloviradmin@gmail.com?subject=Aurora%20Fish%20Support">cloviradmin@gmail.com</a>
+
+    <h2>Frequently asked questions</h2>
+    <h3>Do I need an account?</h3>
+    <p>No. Aurora Fish works without sign-up or login.</p>
+    <h3>Where is my aquarium saved?</h3>
+    <p>Only on your device. Your fish, aquariums and progress are stored locally and are never sent to a server. Deleting the app also deletes this data, and it cannot be restored from elsewhere.</p>
+    <h3>Can my fish die?</h3>
+    <p>Never. If you are away for a while, your fish simply waits for you.</p>
+    <h3>Why does the app ask for notifications?</h3>
+    <p>Only for gentle, local reminders about caring for your fish and their growth moments. You can turn them off anytime in your device's Settings.</p>
+    <h3>Is it free?</h3>
+    <p>Yes. All features are free, with no ads and no in-app purchases.</p>
+
+    <h2>Privacy</h2>
+    <p>Read the <a href="privacy.html?lang=en">Privacy Policy</a>.</p>
+  </section>
+
+  <section class="doc" data-lang="ko" lang="ko">
+    <h1>Aurora Fish 고객지원</h1>
+    <p class="muted">물고기를 돌보고, 자라는 모습을 지켜보고, 어항을 꾸미는 잔잔한 어항 앱입니다.</p>
+
+    <h2>문의</h2>
+    <p>궁금한 점, 문제, 의견이 있으시면 이메일로 보내 주세요. 보통 며칠 안에 답장드립니다.</p>
+    <a class="contact" href="mailto:cloviradmin@gmail.com?subject=Aurora%20Fish%20%EB%AC%B8%EC%9D%98">cloviradmin@gmail.com</a>
+
+    <h2>자주 묻는 질문</h2>
+    <h3>계정이 필요한가요?</h3>
+    <p>아니요. Aurora Fish는 회원가입이나 로그인 없이 사용합니다.</p>
+    <h3>어항 데이터는 어디에 저장되나요?</h3>
+    <p>사용자의 기기 안에만 저장됩니다. 물고기, 어항, 진행 상황은 로컬에 저장되며 서버로 전송되지 않습니다. 앱을 삭제하면 이 데이터도 함께 삭제되며, 다른 곳에서 복원할 수 없습니다.</p>
+    <h3>물고기가 죽을 수도 있나요?</h3>
+    <p>절대 죽지 않습니다. 한동안 들르지 못해도 물고기는 그저 기다리고 있어요.</p>
+    <h3>알림 권한은 왜 요청하나요?</h3>
+    <p>물고기 돌봄과 성장 순간을 알려 주는 로컬 리마인드 용도로만 사용합니다. 언제든 기기의 설정에서 끌 수 있습니다.</p>
+    <h3>무료인가요?</h3>
+    <p>네. 모든 기능이 무료이며, 광고와 인앱 결제가 없습니다.</p>
+
+    <h2>개인정보</h2>
+    <p><a href="privacy.html?lang=ko">개인정보처리방침</a>을 확인해 주세요.</p>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy / 개인정보처리방침</a> · © Aurora Fish
+  </footer>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.add('js');
+    var param = new URLSearchParams(location.search).get('lang');
+    var lang = param === 'ko' || param === 'en' ? param : (navigator.language || '').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en';
+    function show(l) {
+      document.querySelectorAll('[data-lang]').forEach(function (el) { el.classList.toggle('shown', el.getAttribute('data-lang') === l); });
+      document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === l)); });
+      root.lang = l;
+    }
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-set')); }); });
+    show(lang);
+  })();
+</script>
+</body>
+</html>
